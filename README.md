@@ -133,12 +133,24 @@ mcp dev go2_mcp/server.py
 | `set_light` | Turn head light on/off |
 | `get_camera_frame` | Capture and return a JPEG frame |
 
+**Claude Desktop configuration** (`claude_desktop_config.json`):
+```json
+{
+  "mcpServers": {
+    "go2": {
+      "command": "/path/to/go2/go2_py311/bin/python",
+      "args": ["/path/to/go2/go2_mcp/server.py"]
+    }
+  }
+}
+```
+
 **Claude Code configuration** (`.claude/settings.json` or project settings):
 ```json
 {
   "mcpServers": {
     "go2": {
-      "command": "/path/to/go2_py311/bin/python",
+      "command": "/path/to/go2/go2_py311/bin/python",
       "args": ["-m", "go2_mcp"],
       "cwd": "/path/to/go2"
     }

@@ -52,6 +52,18 @@ python -m go2_webapp
 python -m go2_mcp
 ```
 
+**Claude Desktop configuration** (`claude_desktop_config.json`):
+```json
+{
+  "mcpServers": {
+    "go2": {
+      "command": "/path/to/go2/go2_py311/bin/python",
+      "args": ["/path/to/go2/go2_mcp/server.py"]
+    }
+  }
+}
+```
+
 ## Configuration
 
 All config is via environment variables (defaults in `go2_bridge/config.py`):
