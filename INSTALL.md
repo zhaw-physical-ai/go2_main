@@ -89,6 +89,8 @@ ifconfig            # macOS
 #   wlan0, en0      — Wi-Fi
 ```
 
+Set up a manual IP: 192.168.123.100
+
 Set the interface when starting the bridge:
 
 ```bash
